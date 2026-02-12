@@ -1,5 +1,5 @@
 // URL de la API de YuGiOh
-const API_URL = "https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20offset=0";
+const API_URL = "https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0";
 
 // Funcion asincrona para obtener las cartas
 async function obtenerCartas() {
@@ -55,6 +55,7 @@ function mostrarCartas(cartas) {
 
 // Ejecutamos la funcion al cargar la pagina
 obtenerCartas();
+
 
 
 
