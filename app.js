@@ -52,3 +52,4 @@ function mostrarCartas(cartas) {
 // Ejecutamos la funcion al cargar la pagina
 obtenerCartas();
 
+
