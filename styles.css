@@ -1,0 +1,54 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: white;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+}
+
+/* Contenedor principal usando Flexbox */
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Tarjeta individual */
+.card {
+    background-color: #1e1e1e;
+    width: 250px;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen de carta */
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Nombre de la carta */
+.card h2 {
+    font-size: 18px;
+}
+
+/* Descripcion */
+.card p {
+    font-size: 14px;
+}
