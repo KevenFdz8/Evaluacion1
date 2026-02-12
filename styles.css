@@ -52,11 +52,3 @@ header {
 .card p {
     font-size: 14px;
 }
-
-.descripcion {
-    font-size: 12px;
-    margin-top: 10px;
-    max-height: 120px;
-    overflow-y: auto;
-    text-align: justify;
-}
