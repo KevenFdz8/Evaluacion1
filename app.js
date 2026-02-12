@@ -36,17 +36,13 @@ function mostrarCartas(cartas) {
         card.classList.add("card");
 
         // Insertamos contenido dinamico usando template literals
-      card.innerHTML = `
-    <img src="${carta.card_images[0].image_url}" alt="${carta.name}">
-    <h2>${carta.name}</h2>
-    <p><strong>Tipo:</strong> ${carta.type}</p>
-    <p><strong>Atributo:</strong> ${carta.attribute || "N/A"}</p>
-    <p><strong>Nivel:</strong> ${carta.level || "N/A"}</p>
-    <p><strong>Raza:</strong> ${carta.race || "N/A"}</p>
-    <p><strong>ATK:</strong> ${carta.atk || "N/A"}</p>
-    <p><strong>DEF:</strong> ${carta.def || "N/A"}</p>
-    <p class="descripcion">${carta.desc}</p>
-`;
+        card.innerHTML = `
+            <img src="${carta.card_images[0].image_url}" alt="${carta.name}">
+            <h2>${carta.name}</h2>
+            <p><strong>Tipo:</strong> ${carta.type}</p>
+            <p><strong>ATK:</strong> ${carta.atk || "N/A"}</p>
+            <p><strong>DEF:</strong> ${carta.def || "N/A"}</p>
+        `;
 
         // Agregamos la tarjeta al contenedor
         contenedor.appendChild(card);
@@ -55,9 +51,3 @@ function mostrarCartas(cartas) {
 
 // Ejecutamos la funcion al cargar la pagina
 obtenerCartas();
-
-
-
-
-
-
